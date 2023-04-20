@@ -1,0 +1,41 @@
+/* *** Extra small Breakpoint *** */
+@media screen and (max-width: 576px) {
+    .primary-container .section-bg .weather-data .translateRow {
+        transform:  translateY(-10%) !important;
+    }
+    .primary-container .section-bg .weather-data .translateRow .card-bg{
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* *** Small Breakpoint *** */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .primary-container .section-bg .weather-data .translateRow {
+        transform:  translateY(-10%) !important;
+    }
+}
+
+
+/* *** Medium Breakpoint *** */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+
+/* *** Large Breakpoint *** */
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+} */
+
+
+/* *** Large Breakpoint *** */
+/* @media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+} */
+
+
+/* *** Extra Large Breakpoint *** */
+@media screen and (min-width: 1400px) {
+
+}

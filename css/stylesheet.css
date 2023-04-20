@@ -1,0 +1,202 @@
+/* *** *** Global CSS *** *** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.primary-container {
+    min-height: 100vh !important;
+    background-color: #1e202b !important;
+}
+
+.navbar-toggler {
+    background-color: #009ad8 !important;
+    color: transparent !important;
+}
+
+.primary-container .navbar .taglineA,
+.primary-container .navbar .taglineB {
+    font-size: 1rem !important;
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(132, 255, 245, 0.8));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.primary-container .navbar .taglineB {
+    font-size: .7rem !important;
+}
+
+.primary-container .navbar li {
+    border-radius:2rem !important;
+    transition: .5s ease;
+    border: 1px solid transparent;
+}
+
+.primary-container .navbar li:hover {
+    border: 01px solid #009ad8;
+}
+
+.primary-container .navbar li:hover a {
+    color: #009ad8 !important;
+}
+
+.primary-container .navbar .active-item {
+    border: 01px solid #009ad8;
+}
+
+.primary-container .navbar .active-link {
+    color: #009ad8 !important;
+}
+
+.primary-container .navbar li a {
+    font-size: .9rem;
+}
+
+/* ***** ***** ***** ***** ***** */
+.primary-container .section-bg .search-container {
+    height: 50vh !important;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+}
+
+.primary-container .section-bg .search-container input {
+    background-color: #1e202b !important;
+    color: white;
+}
+
+.primary-container .section-bg .search-container input::placeholder {    
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.primary-container .section-bg .search-container input:focus {    
+    background-color: #1e202b !important;
+    box-shadow: 0 0 0 0;
+}
+
+.primary-container .section-bg .search-container .find-btn {
+    padding: .6rem 2.5rem !important;
+    background-color: #009ad8;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ***** ***** ***** ***** ***** */
+.primary-container .section-bg .weather-data .translateRow {
+    transform:  translateY(-40%);
+}
+
+.primary-container .section-bg .weather-data .card-bg {
+    background-color: #434861 !important;
+    color: white !important;
+}
+.primary-container .section-bg .weather-data .card-bg .degreeC {
+    font-size: 3rem !important;
+    font-weight: 600;
+}
+.primary-container .section-bg .weather-data .card-bg .header {
+    background-color: #61688b !important;
+    color: white !important;
+}
+
+.primary-container .section-bg .weather-data .crd-B {
+    background-color: #2c3041 !important;
+    color: white !important;
+}
+.primary-container .section-bg .weather-data .crd-B .header {
+    background-color: #555c7a9f !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* ***** ***** ***** ***** ***** */
+.primary-container .section-bg .container-fluid {
+    background-color: #3a3c50;
+}
+
+.primary-container .section-bg .subscribe-container input {
+    background-color: #1e202b !important;
+    color: white;
+}
+
+.primary-container .section-bg .subscribe-container input::placeholder {    
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.primary-container .section-bg .subscribe-container input:focus {    
+    background-color: #1e202b !important;
+    box-shadow: 0 0 0 0; 
+}
+
+.primary-container .section-bg .subscribe-container .find-btn {
+    padding: .6rem 2rem !important;
+    background-color: #009ad8;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.primary-container .section-bg .subscribe-container .icons span {
+    background-color: #1e202b;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    margin: 0px 4px;
+    transition: .5s ease;
+}
+
+.primary-container .section-bg .subscribe-container .icons span:hover {
+    background-color: #009ad8;
+}
+
+.primary-container .section-bg .subscribe-container .icons span:hover i {
+    color: white;
+}
+
+.primary-container .section-bg .subscribe-container .icons span i{
+    font-size: 24px;
+    color: #009ad8;
+    transition: .5s ease;
+}
+/* ***** ***** ******* ***** ***** */
+/* ***** ***** contact ***** ***** */
+
+.section-bg .arrow {
+    background-color: #3a3c50 !important;
+}
+
+.section-bg iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+.section-bg .iframe-content i {
+    color: #009ad8;
+}
+
+.section-bg .formX {
+    color: white;
+    background-color:#1e202b;
+    border: 2px solid #41455e ;
+    outline: 0px;
+    transition: .5s ease;
+}
+
+.section-bg .formX:hover {
+    border: 2px solid #009ad8 ;
+    outline: 0px;
+}
+
+.section-bg .formX:focus {
+    border: 2px solid #009ad8 ;
+    outline: 0px;
+}
+
+.section-bg .form-content button {
+    background-color: #009ad8 !important;
+    color: white !important;
+}
+

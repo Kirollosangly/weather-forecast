@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Weather Forecast</title>
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div class="primary-container">
+        <!-- Navbar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                        <img src="images/logo.png" alt="cloud logo" class="me-2">
+                        <div class="weather">
+                            <p class="m-0 taglineA h6 fw-bold">Weather Forecast</p>
+                            <p class="m-0 taglineB h6">Your Interior Weatherman</p>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item px-3 mx-1">
+                                <a class="nav-link text-white" href="#">Home</a>
+                            </li>
+                            <li class="nav-item px-3 mx-1">
+                                <a class="nav-link text-white" href="#">News</a>
+                            </li>
+                            <li class="nav-item px-3 mx-1">
+                                <a class="nav-link text-white" href="#">Live Cameras</a>
+                            </li>
+                            <li class="nav-item px-3 mx-1">
+                                <a class="nav-link text-white" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item px-3 mx-1">
+                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="section-bg overflow-hidden">
+            <!-- Search bar -->
+            <div class="search-container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-8 my-2 d-flex position-relative">
+                        <input id="search" type="search" class="form-control py-3 ps-3 ps-md-5 border-0 rounded-5"
+                            placeholder="Find your Location">
+                        <button id="searchBtn" type="button" class="find-btn rounded-5 position-absolute border-0 text-white">Find</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Weather data -->
+            <div class="weather-data container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="row translateRow mx-1">
+                            <div class="col-md-4 card-bg crd-A p-0 my-sm-1 my-md-0">
+                                <p class="header text-center m-0 p-2"><!--JS--></p>
+                                <div class="py-4 px-2">
+                                    <p id="cityName" class="mx-0 p-2 h5"><!--JS--></p>
+                                    <div class="degree p-2 py-4 d-flex justify-content-around">
+                                        <p id="degreeJS" class="m-0 h1 degreeC"><!--JS--></p>
+                                        <img id="cloudCon" src="" alt="">
+                                    </div>
+                                    <p id="skyConiditon" class="m-0 p-2"><!--JS--></p>
+                                    <div class="row ms-auto moves justify-content-start align-items-center my-2">
+                                        <div class="col-3 mx-md-2 d-flex justify-content-center align-items-center">
+                                            <i id="droplet" class=""></i>
+                                            <span id="humidity" class="px-2"><!--JS--></span>
+                                        </div>
+                                        <div class="col-3 mx-md-2 d-flex justify-content-center align-items-center">
+                                            <i id="wind" class=""> </i>
+                                            <span id="windSpeed" class="px-2"><!--JS--></span>
+                                        </div>
+                                        <div class="col-3 mx-md-2 d-flex justify-content-center align-items-center">
+                                            <i id="compass" class=""> </i>
+                                            <span id="windDir" class="px-2"><!--JS--></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card-bg crd-B p-0 my-sm-1 my-md-0">
+                                <p class="header text-center m-0 p-2"><!--JS--></p>
+                                <div class="py-4 px-2 text-center ">
+                                    <div class="degree p-2 d-flex flex-column align-items-center mt-3">
+                                        <img id="nextcloudCon" src="" alt="">
+                                        <p id="nextdegreeJS" class="m-0 py-2 h3 degreeC"><!--JS--></p>
+                                        <p id="nextMinJS" class="m-0 h6"><!--JS--></p>
+                                        <p id="nextSkyConiditon" class="m-0 p-2"><!--JS--></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 card-bg crd-A p-0 my-sm-1 my-md-0">
+                                <p class="header text-center m-0 p-2"><!--JS--></p>
+                                <div class="py-4 px-2 text-center ">
+                                    <div class="degree p-2 d-flex flex-column align-items-center mt-3">
+                                        <img id="next1cloudCon" src="" alt="">
+                                        <p id="next1degreeJS" class="m-0 py-2 h3 degreeC"><!--JS--></p>
+                                        <p id="next1MinJS" class="m-0 h6"><!--JS--></p>
+                                        <p id="next1SkyConiditon" class="m-0 p-2"><!--JS--></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="container-fluid">
+                <div class="subscribe-container container py-5">
+                    <div class="row">
+                        <div class="col-md-8 my-2 d-flex position-relative">
+                            <input type="search" class="form-control py-3 ps-5 border-0 rounded-5" placeholder="Subscribe to our newsletter">
+                            <button type="button" class="find-btn rounded-5 position-absolute border-0 text-white">Subscribe</button>
+                        </div>
+                        <div class="col-md-4 my-4 my-md-0 icons d-flex justify-content-center justify-content-md-end align-items-center">
+                            <span><i class="fa-brands fa-facebook-f"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-google"></i></span>
+                            <span><i class="fa-brands fa-pinterest"></i></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-8 ms-3 mt-4 text-white-50  fs-6">
+                            Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+
+
