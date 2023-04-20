@@ -50,7 +50,7 @@ searchBtn.addEventListener('click', () => {
 });
 
 async function getForecast(location) {
-    let currentDay = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=601b5c1f10ea41aa96c125556232202&q=${location}&days=2&aqi=no&alerts=no`)
+    let currentDay = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=601b5c1f10ea41aa96c125556232202&q=${location}&days=2&aqi=no&alerts=no`)
     let currentDayData = await currentDay.json();
     weatherData.push(currentDayData);
     displayForecastData();
